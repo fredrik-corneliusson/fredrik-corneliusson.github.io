@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Islamic Terror Graph</title>
+    <style>
+        .graphcontainer {
+            position: relative;
+            margin: 0px auto;
+            width: 97%;
+        }
+        .graphoverlay {
+            position: absolute;
+            width: 100%;
+            font-size: large;
+            font-family: sans-serif;
+            z-index: 2; }
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            position: absolute;
+            z-index: 1;
+        }
+        .selectbox {
+            margin: 5px 0px 0px;
+        }
+        select {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+<div class="graphcontainer">
+    <div id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="graphoverlay">
+        <div style="float:left">
+            <div class="selectbox">
+            <label for="select_year">Year:</label>
+            <select title="Year of terror" id="select_year">
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016" selected="selected">2016</option>
+            </select>
+            </div>
+
+
+            <div class="selectbox">
+                <label for="select_year">Month:</label>
+                <select title="Month" id="select_month">
+                    <option value="all" selected="selected">All</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="selectbox" style="float: right">
+            <label for="select_country">Country:</label>
+            <select title="Country" id="select_country">
+                <option value="all" selected="selected">all</option>
+            </select>
+        </div>
+    </div>
+</div>
+<script src="dest/bundle.min.js"></script>
+
+</body>
+
+</html>
